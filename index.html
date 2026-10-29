@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Minibot — Bot：连接自己的 MiniMax Bot 宿主，或体验本机离线演示。隐私政策和支持信息。">
+<title>Minibot — Bot</title>
+<style>
+:root{color-scheme:light;--ink:#202a28;--muted:#53635d;--accent:#2f6f5e;--line:#dddeda}*{box-sizing:border-box}body{margin:0;background:#f7f5f0;color:var(--ink);font-family:"Outfit","PingFang SC","Noto Sans CJK SC",sans-serif;font-size:16px;line-height:1.65}header,main,footer{max-width:960px;margin:auto;padding:24px}header{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;border-bottom:1px solid var(--line)}a{color:var(--accent);text-underline-offset:4px}nav{display:flex;flex-wrap:wrap;gap:18px}a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}main{padding-top:58px;padding-bottom:60px}h1{font-size:clamp(36px,7vw,64px);line-height:1.15;letter-spacing:-.03em;margin:14px 0 24px}h2{font-size:23px;line-height:1.4;margin:0 0 12px}p{margin:10px 0}.eyebrow{color:var(--accent);font-size:14px;letter-spacing:.1em}.lead{font-size:22px;max-width:720px}.en{color:var(--muted)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:42px}.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px}.button{display:inline-block;margin:18px 12px 0 0;padding:10px 18px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none}.note{margin-top:28px;padding-top:20px;border-top:1px solid var(--line)}footer{border-top:1px solid var(--line);font-size:14px;color:var(--muted)}@media(max-width:680px){header,main,footer{padding:20px}main{padding-top:36px}.grid{grid-template-columns:1fr;margin-top:28px}.lead{font-size:19px}}
+</style>
+</head>
+<body>
+<header><a href="index.html" aria-current="page"><strong>Minibot — Bot</strong></a><nav aria-label="页面 / Pages"><a href="privacy.html">隐私 / Privacy</a><a href="support.html">支持 / Support</a></nav></header>
+<main id="main">
+<div class="eyebrow">YOUR HOST. YOUR BOTS.</div>
+<h1>把自己的 Bot<br>带在身边。</h1>
+<p class="lead">Minibot 是连接你自己 MiniMax Bot 宿主的移动客户端。模型服务和工具执行由你连接的宿主及其配置的提供商承担。</p>
+<p class="en" lang="en">Minibot connects your phone to your own compatible MiniMax Bot host. Model services and tools are provided by your host and its configured providers.</p>
+<a class="button" href="privacy.html">了解数据使用 / Privacy</a><a class="button" href="support.html">使用帮助 / Get help</a>
+<div class="grid">
+<section class="panel"><h2>连接自己的宿主<br><span lang="en">Connect your own host</span></h2><p>使用你信任的宿主和连接凭证，查看 Bot 与会话、发送文字并阅读回复。可用功能取决于宿主版本、权限和配置。</p><p class="en" lang="en">Bring a trusted host and connection credentials to browse Bots and conversations, send messages and read replies. Features depend on your host version, permissions and configuration.</p></section>
+<section class="panel"><h2>先体验离线演示<br><span lang="en">Try the offline demo</span></h2><p>在连接页选择“离线演示 / Try offline demo”。演示使用本机预设回复和不含私人数据的示例，不调用 AI、不执行工具，也不连接真实宿主。退出演示会重置该演示会话。</p><p class="en" lang="en">Choose “Try offline demo” on the connection screen. Sample content and preset replies run locally, with no private sample data, AI calls, tools or real host connection. Exiting resets the demo session.</p></section>
+</div>
+<div class="note"><p>开发者 / Developer：JINXIANG WANG</p><p>联系 / Contact：<span data-contact><a href="mailto:w13683888208@163.com">w13683888208@163.com</a></span></p><p class="en">本页面不代表 App Store 审核通过或 TestFlight 已开放。<span lang="en">This page does not indicate Apple approval or an available TestFlight release.</span></p></div>
+</main>
+<footer>Minibot — Bot · <a href="privacy.html">Privacy policy</a> · <a href="support.html">Support</a></footer>
+<script>
+// Set the developer-confirmed public email in all three HTML files before launch.
+const PUBLIC_SUPPORT_EMAIL = "";
+if (PUBLIC_SUPPORT_EMAIL) document.querySelectorAll('[data-contact]').forEach(el => { const a = document.createElement('a'); a.href = 'mailto:' + PUBLIC_SUPPORT_EMAIL; a.textContent = PUBLIC_SUPPORT_EMAIL; el.replaceChildren(a); });
+</script>
+</body>
+</html>
